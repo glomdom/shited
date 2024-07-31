@@ -1,6 +1,7 @@
 #pragma once
 
 #include <cstddef>
+
 enum class BufferType {
     Original,
     Add,

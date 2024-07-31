@@ -14,7 +14,7 @@ UI::~UI() {
 
 void UI::draw(const std::vector<std::string>& lines, int cursorLine, int cursorCol) {
     clear();
-    
+
     for (size_t i = 0; i < lines.size(); ++i) {
         mvprintw(i, 0, "%s", lines[i].c_str());
     }

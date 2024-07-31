@@ -7,7 +7,7 @@
 class Buffer {
 public:
     Buffer();
-    
+
     void insertChar(std::size_t line, std::size_t col, char ch);
     void deleteChar(std::size_t line, std::size_t col);
     void newLine(std::size_t line, std::size_t col);

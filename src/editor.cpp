@@ -26,15 +26,15 @@ void Editor::handleInput(int ch) {
         case KEY_RIGHT: {
             if (cursorCol < buffer->getLines()[cursorLine].size()) ++cursorCol;
         } break;
-        
+
         case KEY_UP: {
             if (cursorLine > 0) --cursorLine;
         } break;
-        
+
         case KEY_DOWN: {
             if (cursorLine < buffer->getLineCount() - 1) ++cursorLine;
         } break;
-        
+
         case KEY_BACKSPACE:
         case 127: {
             if (cursorCol > 0) {
@@ -47,7 +47,7 @@ void Editor::handleInput(int ch) {
             }
 
         } break;
-        
+
         case '\n': {
             buffer->newLine(cursorLine, cursorCol);
             cursorLine++;
